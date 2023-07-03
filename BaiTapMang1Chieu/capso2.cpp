@@ -19,11 +19,12 @@ int main() {
   // Nhap mang
   for(int i = 0; i < n; i++) cin >> a[i];
 
-  int min = 1e9;
-  for(int i = 0; i < n-1; i++) {
-    for(int j = i + 1; j < n; j++) {
-      if(abs(a[i] - a[j]) < min) min = abs(a[i] - a[j]);
-    }    
+  int max1 = -1e9, max2 = -1e9;
+  for(int i = 0; i < n; i++) {
+    if(a[i] > max1) {
+      max2 = max1;
+      max1 = a[i];
+    } else if(a[i] > max2) max2 = a[i];
   }
-  cout << min;
+  cout << max1 << " " << max2;
 }

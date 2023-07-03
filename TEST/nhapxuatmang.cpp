@@ -22,8 +22,6 @@ void sort(int a[], int n) {
       if(a[i] < a[j]) swap(a[i], a[j]);
 }
 
-
-
 int main() {
   system("cls");
   int n;
