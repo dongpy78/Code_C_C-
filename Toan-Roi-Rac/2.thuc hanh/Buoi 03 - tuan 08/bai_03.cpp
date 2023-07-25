@@ -9,6 +9,7 @@ double lai(float m, float n, double ls) {
 }
 
 int main() {
+    system("cls");
     cin >> m >> n;
     if (n*12 < 3) cout << lai(m, n, 4.6/100);
     else if (n*12 < 6) cout << lai(m, n, 5.6/100);

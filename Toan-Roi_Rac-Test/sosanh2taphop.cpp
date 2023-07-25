@@ -28,7 +28,7 @@ int main() {
   int arrayA[] = {1, 2, 3};
   int sizeA = sizeof(arrayA) / sizeof(arrayA[0]);
 
-  int arrayB[] = {9, 2, 1};
+  int arrayB[] = {1, 2, 3};
   int sizeB = sizeof(arrayB) / sizeof(arrayB[0]);
 
   // sort(arrayA, sizeA);

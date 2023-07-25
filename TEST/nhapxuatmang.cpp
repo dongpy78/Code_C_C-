@@ -1,10 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void nhap_mang(int a[], int &n) {
-  cout << "Nhap so luong phan tu mang: ";
-  cin >> n;
-  
+void nhap_mang(int a[], int n) {
   for(int i = 0; i < n; i++) {
     cout << "Nhap vao a["<< i <<"] = ";
     cin >> a[i];
@@ -25,7 +22,8 @@ void sort(int a[], int n) {
 int main() {
   system("cls");
   int n;
-  int a[100];
+  cin >> n;
+  int a[n];
   nhap_mang(a, n);
   xuat_mang(a, n);
   cout << endl;

@@ -23,7 +23,7 @@ void Input_Set(int& na, int& nb, int* a, int *b) {
 	}
 }
 
-void Intersection(int na, int nb, int& nc, int*a, int* b, int* c) {
+void Intersection(int na, int nb, int& nc, int* a, int* b, int* c) {
 	nc = 0;
 	for (int i = 0; i < na; i++) {
 		for (int j = 0; j < nb; j++)

@@ -25,6 +25,7 @@ void HoanViTiepTheo(int a[], int n) {
 }
 
 int main() {
+	system("cls");
 	int n;
 	cin >> n;
 	int a[n];

@@ -28,4 +28,4 @@ long double ToHop(int k, int n) {
 
 int main() {
     cout << to_string(ToHop(3,6)*pow(26,3) * pow(10,3));
-}
+}	

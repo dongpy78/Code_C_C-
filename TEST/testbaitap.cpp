@@ -1,30 +1,17 @@
 #include <iostream>
-#include <cmath>
+
 using namespace std;
-#define ll long long
+
+
+long long gt(int n) {
+  long long kq = 1;
+  for(int i = 1; i <= n; i++) kq *= i;
+  return kq;
+}
 
 int main() {
-  system("cls");
-  int n;
+  long long n;
   cin >> n;
-  int a[n];
-  // Nhap mang
- 
-  for(int i = 0; i < n; i++) {
-    int check = 1;
-    for(int j = 0; j < i; j++) {
-      if(a[i] == a[j]) {
-        check = 0; 
-        break;
-      } 
-    }
-    if(check) {
-      int dem = 1;
-      for(int j = i + 1; j < n; j++)
-        if(a[i] == a[j]) dem++;
-    }
-  }
-
-
+  cout << gt(n);
   return 0;
 }

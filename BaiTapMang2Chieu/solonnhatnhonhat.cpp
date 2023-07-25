@@ -14,7 +14,6 @@ OUTPUT
 3 3
 */
 
-
 #include <iostream>
 #include <cmath>
 using namespace std;
